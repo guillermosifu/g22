@@ -1,9 +1,14 @@
+
+body{
+    border:solid blue;
+    height: 100vh;
+}
 .grid-container{
     border: solid;
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 400px 200px;
     gap: 10px;
 }
 
@@ -15,4 +20,47 @@ div{
 .item1{
     grid-column: 1/3;
     grid-row:1/3 ;
+}
+
+/*  areas grid */
+
+.grid-areas{
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-rows: 150px 200px 200px 150px;
+    gap: 10px;
+
+    grid-template-areas: 
+    "techo techo "
+    "sidebar content"
+    "sidebar section"
+    "footer footer"
+    ;
+}
+
+.header{
+  grid-area: techo;
+  padding: 30px;
+  background-color: green;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    padding: 20px;
+    background-color: violet;
+}
+
+.content{
+    grid-area: content;
+    background-color: blue;
+}
+
+.section{
+    grid-area: section;
+    background-color: lightblue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: brown;
 }
