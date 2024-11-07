@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: violet;
+    color: #fff;
+    padding: 20px;
+}
+
+section {
+    border: solid orange;
+    padding: 40px;
+}
+
+/*  media query  */
+/* medida parqa celular */
+
+/* @media(max-width:500px) {
+
+    header {
+        background-color: blue;
+        color: #ccc;
+    }
+} */
+
+/* este mediad tablet  */
+
+@media (max-width:800px) {
+    header {
+        background-color: red;
+        color: #000;
+    }
+
+}
+
+@media (max-width:550px) {
+    section{
+        border: solid red 10px;
+    }
+    
+}
