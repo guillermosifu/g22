@@ -16,6 +16,29 @@ section {
     padding: 40px;
 }
 
+.container{
+    border: solid blue 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-1{
+    border: solid brown 2px;
+    background-color: green;
+    width: 400px;
+    height: 400px;
+}
+
+.box-2{
+    border: solid brown 2px;
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+}
+
+
+
+
 /*  media query  */
 /* medida parqa celular */
 
@@ -33,6 +56,14 @@ section {
     header {
         background-color: red;
         color: #000;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-1{
+        margin-bottom: 20px;
+        width: 550px;
     }
 
 }
