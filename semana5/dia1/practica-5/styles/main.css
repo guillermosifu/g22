@@ -233,7 +233,7 @@ img:hover {
   bottom: 50px;
 }
 
-@-webkit-keyframes circle1 {
+@keyframes circle1 {
   from {
     bottom: 100%;
   }
